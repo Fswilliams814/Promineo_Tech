@@ -54,3 +54,20 @@ var fullName = firstName + " " + middleInitial + " Williams";
 //print a line to the console that introduces the customer and says they live at the address variable
 
 console.log ("Hi, my name is " + fullName + " I live at " + streetAddress)
+
+//Week 2 coding challenge below this line
+
+var ageRequiredToDrive = 16;
+var currentAge = 16;
+var canPersonDrive = currentAge >= ageRequiredToDrive
+if (canPersonDrive) {
+    console.log('This person can drive');
+}
+
+var ageRequiredToDrive = 16;
+var currentAge = 9;
+if (currentAge >= ageRequiredToDrive){
+    console.log('This person can drive');
+} else (currentAge < 14);{
+    console.log('Way too young');
+}
