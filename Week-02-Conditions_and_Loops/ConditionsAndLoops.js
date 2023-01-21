@@ -197,6 +197,32 @@ while(currentCupsOfRice != requiredCupsOfRice){
 }// "the bowl contains" + (++currentCupsOfRice)
 console.log('We have enough rice!');
 
+//creating a countdown loop that omits certain numbers that are inputted
+//My CODE solution
+var fs = require("fs");
+var input = fs.readFileSync(process.stdin.fd, "utf-8").trim().split("\n");
+var countdown = parseInt(input[0]);
 
+//write your code here
+for(var i = countdown; i > 0; --i){
+   if(countdown >= 3 && countdown <= 10){
+       console.log(i + "..." );
+   } 
+}
+console.log("We have lift off!");
 
+//instructors code solution
 
+var fs = require("fs");
+var input = fs.readFileSync(process.stdin.fd, "utf-8").trim().split("\n");
+var countdown = parseInt(input[0]);
+ 
+
+if (countdown <= 10 && countdown >= 3) {
+    while (countdown >= 1) {
+        console.log(countdown + "...");
+        countdown--;
+    }
+}
+
+console.log("We have lift off!");
